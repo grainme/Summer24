@@ -2,7 +2,7 @@
 
 ## 17 - 06 - 2024
 - *Source* : [Database Internals](https://www.databass.dev)
-- [x] *Database Fundamentals : Implementing Simple DBMS*:
+- [ ] *Database Fundamentals : Implementing Simple DBMS*:
   - *Basic Functions* : Db_get() to retrieve stuff from the database and Db_set() to push stuff to the database.
   - *Optimization Step* : Avoiding ACID problems, this a thing that most databases strive to guarantee.
     - *Atomicity* : if the machine crashes while running db_set() function, data would be written partially [Solution: Write to a temp then rename if all good!]
