@@ -1,5 +1,16 @@
 # Summer 2024
 
+## 17 - 06 - 2024
+- *Source* : [Database Internals](https://www.databass.dev)
+- [x] *Profiling in C++ (gprof)*:
+  - *Basic Functions* : Db_get() to retrieve stuff from the database and Db_set() to push stuff to the database.
+  - *Optimization Step* : Avoiding ACID problems, this a thing that most databases strive to guarantee.
+    - *Atomicity* : if the machine crashes while running db_set() function, data would be written partially [Solution: Write to a temp then rename if all good!]
+    - *Consistency* : this is a bit weird, and most internet people agree that it has been added to make the acronym work (ACID), otherwise it is also referred as referential integrity, which  is not a database private thing but a rule put by the creator of the database to maintain consistency across data - [Further Reading](https://www.freecodecamp.org/news/acid-databases-explained/#what-does-consistency-mean) 
+    - *Isolation* : if one process calls db_get() while another calls db_set() on the same data, we might read only a part of data, leading to a corrupt result!
+    - *Durability* : db_set() has just terminated succesfully, the machine crashes we might lost the data, as it's not flushed to the disk! [solution : flush it lol && sync]
+    - *Performance (optional)* grep (bash) - while loop in C++ uses O(n) algorithm to find a certain key in the database file which is slow! [solution : hashmap, indexing...]
+
 ## 16 - 06 - 2024
 - [x] *Profiling in C++ (gprof)*:
   - *Concept*: Profiling helps determine how your program uses processor resources.
