@@ -1,5 +1,12 @@
 # Summer 2024
 
+## 20 - 06 - 2024
+- *I'm trying to understand the following* : *This is why the main limitation of storage engines is the disk itself, and thus all designs try to minimize disk I/O and disk seeks as much as possible. Some designs even get rid of disks in favor of SSDs (although they are much more expensive)*
+- *Difference between RAM and Disk Storage*
+  - *Definitions* : RAM is a volatile memory that is used to store and quickly access data that is actively being used or processed. once laptop is powered off, data is BAHH! On the other hand, Storage is used for long-term data retention, like an HDD or SDD and unlike RAM this type of storage is non-volatile which means it can be used to keep data even after the laptop is powered off.
+  - *Speed & capacity* : RAM is quicker that Disk Storage; Disk Storage can handle a huge amount of data whereas RAM can only handle Gbs of data!
+  - *Further reading* : [Useful blog](https://www.backblaze.com/blog/whats-diff-ram-vs-storage/)   
+
 ## 17 - 06 - 2024
 - *Source* : [Database Internals](https://www.databass.dev)
 - [ ] *Database Fundamentals : Implementing Simple DBMS*:
