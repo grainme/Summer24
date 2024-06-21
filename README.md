@@ -1,5 +1,9 @@
 # Summer 2024
 
+## 21 - 06 - 2024
+- *Ultimate goal is to implement a B-Tree* : I have revised some basic notion like def of Binary Tree, def of BST, Height of Tree, Balancing, why do we need balancing, its effect on T_Complexity on different operations(Insertion, searching, deletion..) -  [Further Reading](https://www.youtube.com/watch?v=MpGOoJtEYII)
+- The most optimal tree, AFAIK is AVL Tree, because it's a BST and it is BALANCED which means its worst TC for searching is O(logN) 
+
 ## 20 - 06 - 2024
 - *I'm trying to understand the following* : *This is why the main limitation of storage engines is the disk itself, and thus all designs try to minimize disk I/O and disk seeks as much as possible. Some designs even get rid of disks in favor of SSDs (although they are much more expensive)*
 - *Difference between RAM and Disk Storage*
