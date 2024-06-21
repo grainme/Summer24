@@ -2,7 +2,14 @@
 
 ## 21 - 06 - 2024
 - *Ultimate goal is to implement a B-Tree* : I have revised some basic notion like def of Binary Tree, def of BST, Height of Tree, Balancing, why do we need balancing, its effect on T_Complexity on different operations(Insertion, searching, deletion..) -  [Further Reading](https://www.youtube.com/watch?v=MpGOoJtEYII)
-- The most optimal tree, AFAIK is AVL Tree, because it's a BST and it is BALANCED which means its worst TC for searching is O(logN) 
+- **Stuff I've learned :**
+   - The most optimal tree, AFAIK is AVL Tree, because it's a BST and it is BALANCED which means its worst TC for searching is O(logN)
+   - M-way Tree / M-way Search Tree (MST) : is basically a tree that can have up to M (is given/chosen) children, and every node in our m-way tree can have up to m-1 key fields and pointers (Address Memory) to its children.
+   - **Biggest Advantage of MST over BST** is less traversal overhead, because in a MST we do have shorter heights compared to a BST because we can store multiple keys in one single node and so we can quickly look up a specific value, also from a bird's-eye view an MST is bunch of homogeneous BSTs (my own observation HHHH);
+   - Different facts : max elements that a MT can handle is : **M^(H+1)-1** ; where **H** is the height of the tree and **M** is the degree already known.
+   - Criteria that a MT should follow to be MST : ![image](https://github.com/grainme/Summer24/assets/104838272/71eb733a-24bd-4c7c-83ac-df09858d961b)
+
+
 
 ## 20 - 06 - 2024
 - *I'm trying to understand the following* : *This is why the main limitation of storage engines is the disk itself, and thus all designs try to minimize disk I/O and disk seeks as much as possible. Some designs even get rid of disks in favor of SSDs (although they are much more expensive)*
