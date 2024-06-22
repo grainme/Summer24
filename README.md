@@ -1,5 +1,12 @@
 # Summer 2024
 
+## 22 - 06 - 2024
+- *I could not find decent M-way Tree implementation in C++, so i switch it up to B_trees*
+- **B-Tree** is a self-balancing tree data that is used to implement file systems and databases mainly, it is useful for storing a lot of data on disc because it is made to minimize the number of disc accesses necessary to locate a specific piece of data!
+- *A node* typically has between B-1 and 2B-1 keys (fields) and pointers to its child, where **B** is known as the order of the tree.
+- All other nodes must have at least B/2 keys, and the root node of a B-tree must have at least one key.
+- **Biggest selling point of B-Tree** is its automatic self-balance! 
+
 ## 21 - 06 - 2024
 - *Ultimate goal is to implement a B-Tree* : I have revised some basic notion like def of Binary Tree, def of BST, Height of Tree, Balancing, why do we need balancing, its effect on T_Complexity on different operations(Insertion, searching, deletion..) -  [Further Reading](https://www.youtube.com/watch?v=MpGOoJtEYII)
 - **Stuff I've learned :**
