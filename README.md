@@ -4,8 +4,8 @@
 - *Stuff I've learned :*
    - Insertion process in the MST:
      - Insert keys in the node till the key count == m-1 (should be inserted in ascending order)
-     - if node is full (key count == m-1) then insert key in the left subtree where key_new < key_parent
-     - if node is full (key count == m-1) then insert key in the right subtree where key_new > key_parent
+     - if node is full ```key count == m-1``` then insert key in the left subtree where key_new < key_parent
+     - if node is full ```key count == m-1``` then insert key in the right subtree where key_new > key_parent
      - Repeat Process
    - Deletion process in the MST:
      - Case 1 : Deletion of a key with no subtrees : simply delete the key.
