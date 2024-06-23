@@ -1,17 +1,24 @@
 # Summer 2024
 
-## 22 - 06 - 2024
-- *I could not find decent M-way Tree implementation in C++, so i switch it up to B_trees*
-- **B-Tree** is a self-balancing tree data that is used to implement file systems and databases mainly, it is useful for storing a lot of data on disc because it is made to minimize the number of disc accesses necessary to locate a specific piece of data!
-- *A node* typically has between B-1 and 2B-1 keys (fields) and pointers to its child, where **B** is known as the order of the tree.
-- All other nodes must have at least B/2 keys, and the root node of a B-tree must have at least one key.
-- **Biggest selling point of B-Tree** is its automatic self-balance! 
+## 23- 06 - 2024
+- *Stuff I've learned :*
+   - Insertion process in the MST:
+     - Insert keys in the node till the key count == m-1 (should be inserted in ascending order)
+     - if node is full (key count == m-1) then insert key in the left subtree where key_new < key_parent
+     - if node is full (key count == m-1) then insert key in the right subtree where key_new > key_parent
+     - Repeat Process
+   - Deletion process in the MST:
+     - Case 1 : Deletion of a key with no subtrees : simply delete the key.
+     - Case 2a : Deletion of a key with a left subtree : Replace the key with the largest value from LST and then delete that replaced key.
+     - Case 2a : Deletion of a key with a right subtree : Replace the key with the smalest valure from RST and then delete that replaced key.
+     - Case 3 : Deletion of a key with both left and right subtree: Either replace the key with largest value from LST or smallest value from RST and then delete that replaced key.
+     
 
 ## 21 - 06 - 2024
 - *Ultimate goal is to implement a B-Tree* : I have revised some basic notion like def of Binary Tree, def of BST, Height of Tree, Balancing, why do we need balancing, its effect on T_Complexity on different operations(Insertion, searching, deletion..) -  [Further Reading](https://www.youtube.com/watch?v=MpGOoJtEYII)
 - **Stuff I've learned :**
    - The most optimal tree, AFAIK is AVL Tree, because it's a BST and it is BALANCED which means its worst TC for searching is O(logN)
-   - M-way Tree / M-way Search Tree (MST) : is basically a tree that can have up to M (is given/chosen) children, and every node in our m-way tree can have up to m-1 key fields and pointers (Address Memory) to its children.
+   - M-way Tree / M-way Search Tree (MST) : is basically a tree that where every node can have up to **M-1** key fields and **M** pointers (Address Memory) to its children.
    - **Biggest Advantage of MST over BST** is less traversal overhead, because in a MST we do have shorter heights compared to a BST because we can store multiple keys in one single node and so we can quickly look up a specific value, also from a bird's-eye view an MST is bunch of homogeneous BSTs (my own observation HHHH);
    - Different facts : max elements that a MT can handle is : **M^(H+1)-1** ; where **H** is the height of the tree and **M** is the degree already known.
    - Criteria that a MT should follow to be MST : ![image](https://github.com/grainme/Summer24/assets/104838272/71eb733a-24bd-4c7c-83ac-df09858d961b)
