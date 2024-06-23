@@ -12,7 +12,10 @@
      - Case 2a : Deletion of a key with a left subtree : Replace the key with the largest value from LST and then delete that replaced key.
      - Case 2a : Deletion of a key with a right subtree : Replace the key with the smalest valure from RST and then delete that replaced key.
      - Case 3 : Deletion of a key with both left and right subtree: Either replace the key with largest value from LST or smallest value from RST and then delete that replaced key.
-     
+- **B-Tree Introduction** :
+   - it's self-balancing m-way search tree that allows all operations in O(logN)
+   - it is perfectly balanced which means all leaf node are at the same depth.
+   - EVERY node is at least Half-full, which means it contains up to **M/2** keys (surely less, it should be **<= M-1**)
 
 ## 21 - 06 - 2024
 - *Ultimate goal is to implement a B-Tree* : I have revised some basic notion like def of Binary Tree, def of BST, Height of Tree, Balancing, why do we need balancing, its effect on T_Complexity on different operations(Insertion, searching, deletion..) -  [Further Reading](https://www.youtube.com/watch?v=MpGOoJtEYII)
