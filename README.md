@@ -1,5 +1,14 @@
 # Summer 2024
 
+## 26 - 06 - 2024
+- **No runtime**: I often see phrases like "Rust has no runtime" and wondered wth runtime means!
+- The runtime is the part of a programming language responsible for executing the code you write. It includes memory management, error handling, and other necessary services the code relies on while running. Higher-level programming languages have a significant runtime, meaning they need to load a lot of components before running the code, such as garbage collection and dynamic type checking. In contrast, Rust, C, and C++ have minimal runtimes.
+- **Lambda in C++** : i will write down some notes about lambda and related subjects
+- Asynchronous vs Synchronous events: async event are the event that occur at diffrent times whereas sync event are the opposite.
+- A *callback function* is a function that is passed as an argument to another function and then it will get executed inside that block, usually callback funcs are used in event-driven programming, when you want to perform some action when a certain event occurs!
+- BTW we still in C/C++ (maybe this knowledge is passe-partout and could be inherited by RUST) but i'm definitely not writing about JS, so get outa here! 
+
+
 ## 23- 06 - 2024
 - *Stuff I've learned :*
    - Insertion process in the MST:
