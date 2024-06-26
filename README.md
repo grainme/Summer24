@@ -6,7 +6,8 @@
 - **Lambda in C++** : i will write down some notes about lambda and related subjects
 - Asynchronous vs Synchronous events: async event are the event that occur at diffrent times whereas sync event are the opposite.
 - A *callback function* is a function that is passed as an argument to another function and then it will get executed inside that block, usually callback funcs are used in event-driven programming, when you want to perform some action when a certain event occurs!
-- BTW we still in C/C++ (maybe this knowledge is passe-partout and could be inherited by RUST) but i'm definitely not writing about JS, so get outa here! 
+- BTW we still in C/C++ (maybe this knowledge is passe-partout and could be inherited by RUST) but i'm definitely not writing about JS, so get outa here!
+- SO why am i noting down callbacks, because Lambdas are so useful when it comes to defining callback in fact, here is a proper note : **C++ Lambda expressions are a convenient way to define an anonymous function object or functor in C++. It can improve readability when writing callback functions.**
 
 
 ## 23- 06 - 2024
