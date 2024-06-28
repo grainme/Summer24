@@ -1,5 +1,15 @@
 # Summer 2024
 
+## 28 - 06 - 2024
+- **Still learning C++ (infinite language)** //
+- **Macros vs Functions** : macros are bad (lol), error-prone, hard to debug, not very much readable, they rely on textual substitution and do not perform type checking ; macros are preprocessed whereas functions are compiled, i believe we cannot perform side effects using macros at least not naturally.
+- writing multi line macros are pain in the hand (lol).
+- UB : check this out, very dangerous camarade! - [Further reading](https://stackoverflow.com/questions/9104568/macro-vs-function-in-c)
+
+- ![image](https://github.com/grainme/Summer24/assets/104838272/d331f8aa-2bdd-43c8-928d-2f2579f7f32b)
+
+- **Extern keyword** : This comes in useful when you have global variables. You declare the existence of global variables in a header, so that each source file that includes the header knows about it, but you only need to “define” it once in one of your source files. Awesome answer by @dreamlax - [Further Reading](https://stackoverflow.com/questions/10422034/when-to-use-extern-in-c)
+
 ## 26 - 06 - 2024
 - **No runtime**: I often see phrases like "Rust has no runtime" and wondered wth runtime means!
 - The runtime is the part of a programming language responsible for executing the code you write. It includes memory management, error handling, and other necessary services the code relies on while running. Higher-level programming languages have a significant runtime, meaning they need to load a lot of components before running the code, such as garbage collection and dynamic type checking. In contrast, Rust, C, and C++ have minimal runtimes.
