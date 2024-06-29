@@ -2,6 +2,7 @@
 
 ## 28 - 06 - 2024
 - **Still learning C++ (infinite language)** //
+- **unique_ptr : ** cool feature in C++, it's basically a pointer that deallocate itself when going out of scope also you can't have two owners of the same ptr, it's unique after all, there is what's called shared_ptr for that use case, but we won't go deep into that unless necessary!
 - **Template Classes** : template definitons should be in the header file because they need to be available for every single translate unit (.cpp file // .cpp compiled into objects then the linker combines these objects into a single executable) that uses them, also the compiler generates code for the template when it is used with specific types. 
 - **Macros vs Functions** : macros are bad (lol), error-prone, hard to debug, not very much readable, they rely on textual substitution and do not perform type checking ; macros are preprocessed whereas functions are compiled, i believe we cannot perform side effects using macros at least not naturally.
 - writing multi line macros are pain in the hand (lol).
